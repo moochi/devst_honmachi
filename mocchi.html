@@ -8,16 +8,22 @@
 <h1>チートシート予定地</h1>
 <table>
 	<tr>
-<<<<<<< HEAD
-		<td>mocchi</td>
-		<td>solacreative</td>
-=======
 		<td>
 			mocchi<br>
-
+			マージの競合を解消<br>
+			マージの競合を確認する<br>
+				git diff (競合のある差分すべて)<br>
+				git diff --base $file (ベースファイルに対して)<br>
+				git diff --ours $file (あなたの変更に対して)<br>
+				git diff --theirs $file (他人の変更に対して)<br>
+			競合しているパッチを捨てる<br>
+				git reset --head<br>
+				git rebase --skip<br>
+			競合を解消してマージする<br>
+				git add $conficting_file (競合を解消した全ファイルに)<br>
+				git rebase --continue<br>
 		</td>
-		<td></td>
->>>>>>> add
+		<td>solacreative</td>
 		<td></td>
 		<td></td>
 		<td></td>
