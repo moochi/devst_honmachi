@@ -23,6 +23,13 @@
 </head>
 <body>
 <h1>チートシート予定地</h1>
+<div id="rule">
+	<h2>チートシートの表記法</h2>
+	<li>$id コミットID、ブランチ名、タグ名のいずれか</li>
+	<li>$file 任意のファイル名</li>
+	<li>$branch 任意のブランチ名</li>
+</div>
+
 <table class="mainframe">
 	<tr>
 		<td class="mainframe">
@@ -77,18 +84,18 @@ git rebase --continue
 		</td>
 		<td class="mainframe">
 		<h3>取り消し</h3>
-		<ul>
-			<li>最後にコミットした状態に戻す</li>
-			git reset --hard
-			<li>最後のコミットを取り消す</li>
-			git revert HEAD
-			<li>指定したコミットを取り消す</li>
-			git revert $id
-			<li>最新のコミットを修正する</li>
-			git commit -a --amend
-			<li>ファイル$fileのバージョン$idをチェックアウトする</li>
-			git checkout $id $file
-		</ul>
+		<dl>
+			<dt>最後にコミットした状態に戻す</dt>
+			<dd>git reset --hard</dd>
+			<dt>最後のコミットを取り消す</dt>
+			<dd>git revert HEAD</dd>
+			<dt>指定したコミットを取り消す</dt>
+			<dd>git revert $id</dd>
+			<dt>最新のコミットを修正する</dt>
+			<dd>git commit -a --amend</dd>
+			<dt>ファイル$fileのバージョン$idをチェックアウトする</dt>
+			<dd>git checkout $id $file</dd>
+		</dl>
 		</td>
 		<td class="mainframe">
 			<h3>公開</h3>
