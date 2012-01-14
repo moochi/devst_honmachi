@@ -3,16 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<style type="text/css">
+		td.mainframe {
+			border: 1px #9999FF solid;
+		}
+
+		table.mainframe {
+			border: 1px #9999FF solid;
+			border-collapse: collapse;
+		}
+	</style>
 </head>
 <body>
 <h1>チートシート予定地</h1>
-<table>
+<table class="mainframe">
 	<tr>
-		<td>mocchi</td>
-		<td>solacreative</td>
-		<td>tomix55</td>
-		<td>
-		<ul>取り消し
+		<td class="mainframe">mocchi</td>
+		<td class="mainframe">solacreative</td>
+		<td class="mainframe">tomix55</td>
+		<td class="mainframe">
+		<h3>取り消し</h3>
+		<ul>
 			<li>最後にコミットした状態に戻す</li>
 			git reset --hard
 			<li>最後のコミットを取り消す</li>
@@ -25,7 +36,13 @@
 			git checkout $id $file
 		</ul>
 		</td>
-		<td></td>
+		<td class="mainframe">
+			<h3>公開</h3>
+			<div>
+				<span>ローカルの変更をすべてコミットする</span>
+				<span>git commit -a</span>
+			</div>
+		</td>
 	</tr>
 </table>
 </body>
