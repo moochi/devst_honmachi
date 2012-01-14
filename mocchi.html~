@@ -25,21 +25,7 @@
 <h1>チートシート予定地</h1>
 <table class="mainframe">
 	<tr>
-		<td class="mainframe">
-mocchi
-マージの競合を解消
-マージの競合を確認する
-git diff (競合のある差分すべて)
-git diff --base $file (ベースファイルに対して)
-git diff --ours $file (あなたの変更に対して)
-git diff --theirs $file (他人の変更に対して)
-競合しているパッチを捨てる
-git reset --head
-git rebase --skip
-競合を解消してマージする
-git add $conficting_file (競合を解消した全ファイルに)
-git rebase --continue
-		</td>
+		<td class="mainframe">mocchi</td>
 		<td class="mainframe">
 			solacreative
 			<h2>表示</h2>
@@ -64,17 +50,7 @@ git rebase --continue
 					<dd>ローカルブランチを全て表示する</dd>
 			</dl>
 		</td>
-		<td class="mainframe">tomix55
-			<h3>ブランチ</h3>
-			<div>
-				<p>git branch $branch1 [$branch2]</p>
-				<p>$branch1を[$branch2を元に]作成する</p>
-			</div>
-			<div>
-				<p>git checkout $branch</p>
-				<p>ブランチを切り替える</p>
-			</div>
-		</td>
+		<td class="mainframe">tomix55</td>
 		<td class="mainframe">POego/Yangsin</td>
 		<td class="mainframe">
 			<h3>公開</h3>
