@@ -3,30 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<style type="text/css">
+		td.mainframe {
+			border: 1px #9999FF solid;
+		}
+		table.mainframe {
+			border: 1px #9999FF solid;
+			border-collapse: collapse;
+		}
+		div.node1 {
+			width: 100%;
+			background-color: #CCCCCC;
+		}
+		div.node2 {
+			width: 100%;
+			background-color: #FFFFFF;
+		}
+	</style>
 </head>
 <body>
 <h1>チートシート予定地</h1>
-<table>
+<table class="mainframe">
 	<tr>
-		<td>
-			mocchi<br>
-			マージの競合を解消<br>
-			マージの競合を確認する<br>
-				git diff (競合のある差分すべて)<br>
-				git diff --base $file (ベースファイルに対して)<br>
-				git diff --ours $file (あなたの変更に対して)<br>
-				git diff --theirs $file (他人の変更に対して)<br>
-			競合しているパッチを捨てる<br>
-				git reset --head<br>
-				git rebase --skip<br>
-			競合を解消してマージする<br>
-				git add $conficting_file (競合を解消した全ファイルに)<br>
-				git rebase --continue<br>
+		<td class="mainframe">mocchi</td>
+		<td class="mainframe">
+			solacreative
+			<h2>表示</h2>
+			<dl>
+				<dt>git status</dt>
+					<dd>作業したディレクトリで変更したファイルを表示する</dd>
+				<dt>git diff</dt>
+					<dd>追跡対象のファイルに対する変更を表示する</dd>
+				<dt>git diff $id1 $id2</dt>
+					<dd>$1と$2の差分を表示する</dd>
+				<dt>git log</dt>
+					<dd>変更履歴を表示する</dd>
+				<dt>git log -p $file $dir/ec/tory/</dt>
+					<dd>ファイルの変更履歴を差分付きで表示する</dd>
+				<dt>git blame $file</dt>
+					<dd>ファイルのどこをいつ誰が変更したか表示する</dd>
+				<dt>git show $id</dt>
+					<dd>$idのコミット内容を表示する</dd>
+				<dt>git show $id:$file</dt>
+					<dd>特定$idのファイル$fileを表示する</dd>
+				<dt>git branch</dt>
+					<dd>ローカルブランチを全て表示する</dd>
+			</dl>
 		</td>
-		<td>solacreative</td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td class="mainframe">tomix55</td>
+		<td class="mainframe">POego/Yangsin</td>
+		<td class="mainframe">
+			<h3>公開</h3>
+			<div class="node1">
+				<h4>ローカルの変更をすべてコミットする</h4>
+				<span>git commit -a</span>
+			</div>
+			<div class="node2">
+				<h4>他の開発者向けにパッチを用意する</h4>
+				<span>git format-patch origin</span>
+			</div>
+			<div class="node1">
+				<h4>変更をoriginに反映する</h4>
+				<span>git push</span>
+			</div>
+			<div class="node2">
+				<h4>バージョンやマイルストーンのタグを付ける</h4>
+				<span>git tag v1.0</span>
+			</div>
+		</td>
 	</tr>
 </table>
 </body>
