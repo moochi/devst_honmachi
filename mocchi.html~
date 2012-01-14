@@ -64,32 +64,8 @@ git rebase --continue
 					<dd>ローカルブランチを全て表示する</dd>
 			</dl>
 		</td>
-		<td class="mainframe">tomix55
-			<h3>ブランチ</h3>
-			<div>
-				<p>git branch $branch1 [$branch2]</p>
-				<p>$branch1を[$branch2を元に]作成する</p>
-			</div>
-			<div>
-				<p>git checkout $branch</p>
-				<p>ブランチを切り替える</p>
-			</div>
-		</td>
-		<td class="mainframe">
-		<h3>取り消し</h3>
-		<ul>
-			<li>最後にコミットした状態に戻す</li>
-			git reset --hard
-			<li>最後のコミットを取り消す</li>
-			git revert HEAD
-			<li>指定したコミットを取り消す</li>
-			git revert $id
-			<li>最新のコミットを修正する</li>
-			git commit -a --amend
-			<li>ファイル$fileのバージョン$idをチェックアウトする</li>
-			git checkout $id $file
-		</ul>
-		</td>
+		<td class="mainframe">tomix55</td>
+		<td class="mainframe">POego/Yangsin</td>
 		<td class="mainframe">
 			<h3>公開</h3>
 			<div class="node1">
